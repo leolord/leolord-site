@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+# Leolord的个人站点
 
-You can use the [editor on GitHub](https://github.com/leolord/leolord-site/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+原本将博客放到了阿里云上，用Koa 2东拼西凑写了一个博客，用到了MongoDB、Nginx、Redis、PM2等一堆实际上并没有什么用的东西。期间甚至还因为Node.js对于ES6的支持增强而做过一次改版。之后悲剧的发现，自己的懒惰是无可救药的。不但很久没有写过任何东西，站点上的Bug也懒得修复。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+最终决定把博客先放到Github上吧，万一我那天彻底忘记去阿里云续费呢。
 
-### Markdown
+我本身是个前端工程师，不过后端也不是没写过。工作三年多点了，PHP、Node.js、前端、Java啥乱七八糟的都写过一点，但是除了本行，别的还是啥都不会。 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+即使单纯前端方向的话，我也很少有非常深入研究的话题。 同事说这是缺乏方法论。我甚至不知道啥叫方法论。
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/leolord/leolord-site/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

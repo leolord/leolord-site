@@ -1,1 +1,12 @@
-theme: jekyll-theme-midnight
+timezone: Asia/Shanghai
+title: Leolord的博客
+show_downloads: false
+lang: cmn-Hans
+google_analytics: UA-108823943-1
+description: 一个前端工程师的自我修养
+
+collections:
+  - 前端
+  - 健身
+  - 杂谈
+  - 其他技术

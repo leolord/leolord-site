@@ -1,0 +1,15 @@
+<nav class="ui container" style="margin-top: 10px;">
+  <div class="ui inverted menu">
+    <div class="item">
+      <img src="{{ "/assets/apple-touch-icon.png" | relative_url }}" style="width: 24px; height: 24px;">
+    </div>
+    <!-- <a class="toc item"> -->
+      <!-- <i class="sidebar icon"></i> -->
+    <!-- </a> -->
+    <a class="header item" href="{{ site.url | default: "/"}}">{{ site.title | default: site.github.repository_name }}</a>
+
+    {% for cat in site.categories %}
+      <a class="{% if post and post.category === cat %} active {% endif %} item" href="{{ site.url | default: "/"}}">{{ category }}</a>
+    {% endfor %}
+  </div>
+</nav>

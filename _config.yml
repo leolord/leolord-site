@@ -1,12 +1,12 @@
+author: 吴建涛
+description: 吴建涛(Leolord)，一个前端工程师，目前就职于北京字节跳动网络技术有限公司。这里是一些乱七八糟的东西。
+google_analytics: UA-108823943-1
+lang: cmn-Hans
+logo: /assets/favicon-32x32.png
+show_downloads: false
 timezone: Asia/Shanghai
 title: Leolord的博客
 url: https://www.leolord.com
-author: 吴建涛
-show_downloads: false
-lang: zh-CN
-google_analytics: UA-108823943-1
-logo: /assets/favicon-32x32.png
-description: 吴建涛(Leolord)，一个前端工程师，目前就职于北京字节跳动网络技术有限公司。这里是一些乱七八糟的东西。
 
 twitter:
   username: LuckFatBoy

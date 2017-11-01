@@ -1,0 +1,25 @@
+<aside class="ui dividing right rail">
+  <section class="about item">
+    <h3 class="about__title">{{ site.title | default: site.github.repository_name }}</h3>
+    <p class="about__description">{{ site.description | default: site.github.project_tagline }}</p>
+    <a class="about__github" href="{{ site.github.owner_url }}" _target="_blank">{{ site.github.owner_name }} Github地址</a>
+  </section>
+
+  <div class="ui divider"></div>
+
+  <ul class="recent-posts item">
+    {% for post in site.posts limit:10 %}
+      <li class="recent_post">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="ui divider"></div>
+
+  <ul class="category-list item">
+    {% for tag in site.tags  %}
+      {{cat.tag}}
+    {% endfor %}
+  </ul>
+</aside>

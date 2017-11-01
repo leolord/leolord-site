@@ -6,9 +6,8 @@
     {% include favicon.html %}
     {% seo %}
     {% feed_meta %}
+    <link rel="stylesheet" href="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -17,38 +16,30 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
-  <body>
-      <div id="header">
-        {% include nav.html %}
-      </div><!-- end header -->
+  <body class="homepage">
+    {% include header.html %}
 
-    <div class="wrapper">
+    <div class="ui container" style="margin-top: 30px;">
+      <main class="ui vertical segment" style="margin-right: 338px;">
+        {% include aside.html %}
 
-      <section>
-        <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <hr>
-          <span class="credits left">作者： <a href="{{ site.github.owner_url }}" _target="_blank">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">托管于Github Pages &mdash; 主题： <a href="https://twitter.com/michigangraham" _target="_blank">mattgraham</a></span>
-        </div>
-
-        {{ content }}
-
-      </section>
-
+         {{ content }}
+      </main>
     </div>
 
     {% if site.google_analytics %}
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
     {% endif %}
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.js"></script>
 
   </body>
 </html>

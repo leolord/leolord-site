@@ -1,18 +1,36 @@
 author: 吴建涛
 description: 吴建涛(Leolord)，一个前端工程师，目前就职于北京字节跳动网络技术有限公司。这里是一些乱七八糟的东西。
 google_analytics: UA-108823943-1
+highlighter: pygments
+incremental: true
 lang: cmn-Hans
 logo: /assets/favicon-32x32.png
+lsi: false
+markdown: kramdown
 show_downloads: false
+show_dir_listing: false # 显示目录结构
 timezone: Asia/Shanghai
 title: Leolord的博客
-url: https://www.leolord.com
-markdown:    kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-incremental: true
-exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "_site"]
+url: https://leolord.com
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - _site
+
+kramdown:
+  auto_ids: true
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  input: GFM
+  hard_wrap: false
+  footnote_nr: 1
 
 twitter:
   username: LuckFatBoy
@@ -26,9 +44,6 @@ social:
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
-collections:
-  - 前端
-  - 健身
-  - 杂谈
-  - 其他技术
+# paginate: 10

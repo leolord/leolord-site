@@ -1,7 +1,7 @@
 author: 吴建涛
 description: 吴建涛(Leolord)，一个前端工程师，目前就职于北京字节跳动网络技术有限公司。这里是一些乱七八糟的东西。
 google_analytics: UA-108823943-1
-highlighter: pygments
+# highlighter: rouge
 incremental: true
 lang: cmn-Hans
 logo: /assets/favicon-32x32.png
@@ -24,13 +24,14 @@ exclude:
   - _site
 
 kramdown:
-  auto_ids: true
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
   input: GFM
-  hard_wrap: false
-  footnote_nr: 1
+  auto_ids: true
+  # entity_output: as_char
+  # toc_levels: 1..6
+  # smart_quotes: lsquo,rsquo,ldquo,rdquo
+  # syntax_highlighter: rouge
+  # hard_wrap: false
+  # footnote_nr: 1
 
 twitter:
   username: LuckFatBoy

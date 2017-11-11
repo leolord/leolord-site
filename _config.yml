@@ -26,6 +26,14 @@ exclude:
 kramdown:
   input: GFM
   auto_ids: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
   # entity_output: as_char
   # toc_levels: 1..6
   # smart_quotes: lsquo,rsquo,ldquo,rdquo
@@ -46,5 +54,19 @@ social:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-archives
 
 # paginate: 10
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+    - year
+    - month
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    # day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'

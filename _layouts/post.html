@@ -2,10 +2,16 @@
 layout: default
 ---
 
-<div class="ui header">
-  {{ page.title }}
+<h2 class="ui header">{{ page.title }}</h2>
+
+<span>
+  标签：
+  {% for tag in page.tags %}
+    {{tag}}
+  {% endfor %}
+
   <div class="post__date">{{ page.date | date: "%Y-%m-%d" }}</div>
-</div>
+</span>
 
 <div class="ui divider"></div>
 

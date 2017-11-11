@@ -1,1 +1,72 @@
-theme: jekyll-theme-midnight
+author: 吴建涛
+description: 吴建涛(Leolord)，一个前端工程师，目前就职于北京字节跳动网络技术有限公司。这里是一些乱七八糟的东西。
+google_analytics: UA-108823943-1
+# highlighter: rouge
+incremental: true
+lang: cmn-Hans
+logo: /assets/favicon-32x32.png
+lsi: false
+markdown: kramdown
+show_downloads: false
+show_dir_listing: false # 显示目录结构
+timezone: Asia/Shanghai
+title: Leolord的博客
+url: https://leolord.com
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - _site
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+  # entity_output: as_char
+  # toc_levels: 1..6
+  # smart_quotes: lsquo,rsquo,ldquo,rdquo
+  # syntax_highlighter: rouge
+  # hard_wrap: false
+  # footnote_nr: 1
+
+twitter:
+  username: LuckFatBoy
+
+social:
+  name: Leolord
+  links:
+    - http://weibo.com/p/1005051627615060
+    - https://twitter.com/LucyFatBoy
+    - https://www.facebook.com/profile.php?id=100003660305981
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
+
+# paginate: 10
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+    - year
+    - month
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    # day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'

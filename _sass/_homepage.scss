@@ -1,0 +1,21 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-height: 100vh;
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__post-content {
+    min-height: 60%;
+    min-height: 60vh;
+    margin-right: 338px !important;
+    margin-bottom: 14px !important;
+  }
+}
+
+.header-icon {
+  padding: 0 10px;
+}

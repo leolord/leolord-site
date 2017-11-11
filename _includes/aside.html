@@ -1,0 +1,38 @@
+<aside class="ui dividing right rail">
+  <section class="about item">
+    <img class="ui small centered image" src="{{ "/assets/android-chrome-192x192.png" | relative_url }}" alt="">
+
+    <p class="about__description">{{ site.description | default: site.github.project_tagline }}</p>
+  </section>
+
+  <div class="ui divider"></div>
+
+  <h3 class="ui small header">最近博客</h3>
+  <div class="item ui list">
+    {% for post in site.posts limit:10 %}
+      <a class="item" href="{{ post.url }}">{{ post.title }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="ui divider"></div>
+
+  <h3 class="ui small header">标签</h3>
+  <div class="ui horizontal list">
+    {% for tag in site.tags  %}
+      <a class="item" href="{{site.baseurl}}/tag/{{tag[0]}}/">{{tag[0]}}({{tag[1].size}})</a>
+    {% endfor %}
+  </div>
+
+  <div class="ui divider"></div>
+
+  <h3 class="ui small header">归档</h3>
+  <div class="ui list">
+    {% for post in site.posts %}
+      {% assign currentdate = post.date | date: "%B %Y" %}
+      {% if currentdate != date %}
+        <a class="item" href="{{site.baseurl}}/{{post.date | date: "%Y/%m/" }}">{{ post.date | date: "%Y年%m月" }}</a>
+        {% assign date = currentdate %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</aside>

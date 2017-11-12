@@ -30,7 +30,7 @@
     {% for post in site.posts %}
       {% assign currentdate = post.date | date: "%B %Y" %}
       {% if currentdate != date %}
-        <a class="item" href="{{site.baseurl}}/{{post.date | date: "%Y/%m/" }}">{{ post.date | date: "%Y年%m月" }}</a>
+        <a class="item" href="{{site.baseurl}}/date/{{post.date | date: "%Y/%m/" }}">{{ post.date | date: "%Y年%m月" }}</a>
         {% assign date = currentdate %}
       {% endif %}
     {% endfor %}

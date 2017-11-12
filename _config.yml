@@ -65,8 +65,8 @@ jekyll-archives:
     - month
   layout: 'archive'
   permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
+    year: '/date/:year/'
+    month: '/date/:year/:month/'
     # day: '/:year/:month/:day/'
     tag: '/tag/:name/'
     category: '/category/:name/'

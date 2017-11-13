@@ -7,6 +7,8 @@
   <!-- </a> -->
   <a class="header item" href="{{ site.baseurl }}">{{ site.title | default: site.github.repository_name }}</a>
 
+  <a class="{% if post.title == '所有文章' %} active {% endif %} item" href="{{site.baseurl}}/list/">所有文章</a>
+
   {% for cat in site.categories %}
     <a class="{% if post.category == cat[0] %} active {% endif %} item" href="{{site.baseurl}}/category/{{cat[0]}}/">{{cat[0]}}</a>
   {% endfor %}

@@ -13,12 +13,12 @@ layout: default
 <div class="ui ui vertical segment">
   {% for post in page.posts %}
   <div class="post">
-    <h3 class="ui dividing header">
+    <h3 class="ui header">
       <a href="{{post.url}}">{{post.title}}</a>
       <div class="post__date">{{ post.date | date: "%Y-%m-%d" }}</div>
     </h3>
     <p>{{post.excerpt}}</p>
-
+    <div class="ui divider"></div>
   </div>
   {% endfor %}
 </div>

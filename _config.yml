@@ -13,7 +13,7 @@ show_dir_listing: false # 显示目录结构
 show_downloads: false
 timezone: Asia/Shanghai
 title: Leolord的博客
-url: https://leolord.com
+url: http://leolord.github.io
 exclude:
   - Gemfile
   - Gemfile.lock
